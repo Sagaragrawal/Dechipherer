@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dechipherer</string>
+
+
+    <string name="hello">Hello World, DatumDroidOCRActivity!</string>
+    <string name="button_text">OCR!</string>
+    <string name="text_hint">OCRed Text will appear here</string>
+    <string name="LangDefault">language code</string>
+    <string name="keyDefault">api key</string>
+
+</resources>

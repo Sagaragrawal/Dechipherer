@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.spnv.dechipherer.Translate">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/translateedittext"
+        android:text="Input text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/btnsk"
+        android:layout_toLeftOf="@+id/btnsk"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsk"
+        android:background="@drawable/record"
+        android:layout_alignTop="@+id/translateedittext"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/translatabletext"
+        android:layout_below="@+id/btnsk"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="138dp"
+        android:text="Translated Text"
+        android:layout_toStartOf="@+id/btnsk"
+        android:layout_toLeftOf="@+id/btnsk" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/translatabletext"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/translatebutton"
+        android:background="@drawable/tra"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSpeak"
+        android:background="@drawable/speaker"
+        android:layout_alignBottom="@+id/translatabletext"
+        android:layout_toEndOf="@+id/translatabletext"
+        android:layout_toRightOf="@+id/translatabletext"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btss"
+        android:background="@drawable/camera"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/translatabletext"
+        android:layout_toEndOf="@+id/translatabletext" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n"
+        android:id="@+id/bttks"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/translatebutton"
+        android:layout_toEndOf="@+id/translatebutton" />
+
+</RelativeLayout>
