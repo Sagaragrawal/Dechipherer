@@ -1,6 +1,8 @@
 # Dechipherer
 Language Translator
 
+Android Application
+
 Uses Google Api for Backend
 
 Tesserect for OCR
